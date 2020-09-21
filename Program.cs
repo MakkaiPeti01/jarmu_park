@@ -21,6 +21,7 @@ namespace jarmu_park
             int km = int.Parse(Console.ReadLine());
             lada.Megy(km);
             lada.Allapot();
+            Console.WriteLine($"Maradt {lada.UZEMANYAG} l - {lada.MEGTEHETO_KM} km");
             Console.ReadKey();
         }
     }

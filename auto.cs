@@ -10,6 +10,22 @@ namespace jarmu_park
     {
         string szin, tipus;
         double uzemAnyag, fogyaszt, km, megteheto_km;
+        public double UZEMANYAG 
+        {
+            get { return uzemAnyag; }
+        }
+        public double FOGYASZT
+        {
+            get { return fogyaszt; }
+        }
+        public double KM
+        {
+            get { return km; }
+        }
+        public double MEGTEHETO_KM
+        {
+            get { return megteheto_km; }
+        }
         public Auto(string szin, string tipus, double fogyaszt)
         {
             this.szin = szin;
@@ -39,9 +55,9 @@ namespace jarmu_park
         {
             Console.WriteLine("----------------------------------");
             Console.WriteLine($"{tipus} - {szin}");
-            Console.WriteLine($"Km óra: {km} km");
-            Console.WriteLine($"Üzemanyag: {uzemAnyag} L");
-            Console.WriteLine($"Megtehető: {megteheto_km} km");
+            Console.WriteLine($"Km óra: {KM} km");
+            Console.WriteLine($"Üzemanyag: {UZEMANYAG} L");
+            Console.WriteLine($"Megtehető: {MEGTEHETO_KM} km");
             Console.WriteLine("----------------------------------");
         }
     }
